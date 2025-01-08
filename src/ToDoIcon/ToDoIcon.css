@@ -1,0 +1,21 @@
+.icon-check {
+  padding: 5px;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: 1px solid gray;
+  border-radius: 5px;
+}
+.icon-delete {
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  border-radius: 7px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.icon-delete:hover {
+  stroke: red;
+}
