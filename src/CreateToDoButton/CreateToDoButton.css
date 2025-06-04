@@ -1,6 +1,6 @@
 .create-button {
   height: 50px;
-  background-color: lightgreen;
+  background-color: rgb(18, 94, 18);
   border-radius: 100%;
   font-size: 30px;
   width: 50px;
@@ -15,7 +15,7 @@
   transition-duration: 0.2s;
 }
 .create-button:hover{
-  background-color: rgb(107, 243, 107);
+  background-color: rgb(28, 136, 28);
   transform: rotate(45deg);
   transition-duration: 0.2s;
 }
