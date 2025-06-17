@@ -1,21 +1,18 @@
 .create-button {
-  height: 50px;
   background-color: rgb(18, 94, 18);
   border-radius: 100%;
-  font-size: 30px;
-  width: 50px;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 2;
   border: 0;
-  box-shadow: 0 0 10px black;
+  bottom: 20px;
   cursor: pointer;
+  font-size: 25px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
   transform: rotate(0deg);
   transition-duration: 0.2s;
+  width: 60px;
+  z-index: 2;
 }
 .create-button:hover{
   background-color: rgb(28, 136, 28);
-  transform: rotate(45deg);
-  transition-duration: 0.2s;
 }

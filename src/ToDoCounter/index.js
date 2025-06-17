@@ -7,19 +7,19 @@ function ToDoCounter() {
 
   if (totalToDos <= 0) {
     return (
-      <h1 className='counter'>No tienes tareas</h1>
+      <p className='counter'>No tienes tareas</p>
     )
   }
   if (completedToDos === totalToDos) {
     return (
-      <h1 className='counter'>Has completado todas las tareas</h1>
+      <p className='counter'>Has completado todas las tareas</p>
     )
   }
 
   return (
-    <h1 className='counter'>
+    <p className='counter'>
       Has completado {completedToDos} de {totalToDos} tareas
-    </h1>
+    </p>
   );
 }
 

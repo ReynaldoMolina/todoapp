@@ -2,7 +2,7 @@ import './ToDoEmpty.css';
 
 function ToDoEmpty() {
   return (
-    <p>Crea una tarea.</p>
+    <p className='empty-list'>Crea una tarea.</p>
   );
 }
 

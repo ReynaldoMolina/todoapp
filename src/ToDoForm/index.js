@@ -26,7 +26,7 @@ function ToDoForm() {
     <form
       onSubmit={onSubmit}
       className="form-create">
-      <label>Crea tareas</label>
+      <label>Crea una tarea</label>
       <input
         className="form-input"
         placeholder="Crea una tarea"
@@ -35,7 +35,7 @@ function ToDoForm() {
         required
         autoFocus
       />
-      <div>
+      <div className="form-button-div">
         <button
           className="form-button form-button-cancel"
           onClick={onCancel}

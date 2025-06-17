@@ -12,6 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
@@ -23,5 +24,10 @@ code {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 600px;
   padding: 20px;
+  margin-inline: auto;
+  gap: 10px;
+  position: relative;
+  height: 100%;
 }

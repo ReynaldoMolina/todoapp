@@ -8,10 +8,7 @@ function CreateToDoButton() {
     <button
       className='create-button'
       onClick={
-        () => {
-          console.log('Le diste click al boton nuevo');
-          setOpenModal(state => !state);
-        }
+        () => setOpenModal(state => !state)
       }
     >+</button>
   );
