@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/curso-react-intro/static/css/main.bacd2813.css",
-    "main.js": "/curso-react-intro/static/js/main.4f5742a9.js",
-    "static/media/icon-delete.svg": "/curso-react-intro/static/media/icon-delete.5c23d4bde6e43f13f98ddbe8b0b88d41.svg",
-    "index.html": "/curso-react-intro/index.html",
-    "static/media/icon-check.svg": "/curso-react-intro/static/media/icon-check.1e5a024f8aabde9f54943bea7a09629a.svg",
-    "main.bacd2813.css.map": "/curso-react-intro/static/css/main.bacd2813.css.map",
-    "main.4f5742a9.js.map": "/curso-react-intro/static/js/main.4f5742a9.js.map"
+    "main.css": "/todoapp/static/css/main.bacd2813.css",
+    "main.js": "/todoapp/static/js/main.dba33abe.js",
+    "static/media/icon-delete.svg": "/todoapp/static/media/icon-delete.5c23d4bde6e43f13f98ddbe8b0b88d41.svg",
+    "index.html": "/todoapp/index.html",
+    "static/media/icon-check.svg": "/todoapp/static/media/icon-check.1e5a024f8aabde9f54943bea7a09629a.svg",
+    "main.bacd2813.css.map": "/todoapp/static/css/main.bacd2813.css.map",
+    "main.dba33abe.js.map": "/todoapp/static/js/main.dba33abe.js.map"
   },
   "entrypoints": [
     "static/css/main.bacd2813.css",
-    "static/js/main.4f5742a9.js"
+    "static/js/main.dba33abe.js"
   ]
 }
