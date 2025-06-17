@@ -36,5 +36,5 @@
     "gh-pages": "^6.3.0",
     "source-map-loader": "^5.0.0"
   },
-  "homepage": "https://reynaldomolina.github.io/curso-react-intro/"
+  "homepage": "https://reynaldomolina.github.io/todoapp/"
 }
