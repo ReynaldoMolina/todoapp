@@ -26,7 +26,6 @@ function AppUI() {
     <>
       <ToDoCounter/>
       <ToDoSearch/>
-
         <ToDoList>
           {loading && <ToDoLoading/>}
           {error && <ToDoError/>}

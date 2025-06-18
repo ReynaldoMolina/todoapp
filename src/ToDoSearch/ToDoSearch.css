@@ -1,7 +1,7 @@
 .search {
   border-radius: 10px;
   border: none;
-  height: 35px;
+  min-height: 35px;
   padding: 0 15px;
   font-size: 14px;
   background-color: rgb(50, 50, 50);
