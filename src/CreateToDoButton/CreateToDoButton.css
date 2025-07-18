@@ -1,5 +1,5 @@
 .create-button {
-  background-color: rgb(18, 94, 18);
+  background-color: rgb(81, 255, 81);
   border-radius: 100%;
   border: 0;
   bottom: 20px;
@@ -12,7 +12,9 @@
   transition-duration: 0.2s;
   width: 60px;
   z-index: 2;
+  font-weight: bold;
+  color: black;
 }
-.create-button:hover{
-  background-color: rgb(28, 136, 28);
+.create-button:hover {
+  background-color: rgb(37, 214, 37);
 }

@@ -1,31 +1,29 @@
 import React from "react";
-import './ToDoForm.css';
+import "./ToDoForm.css";
 import { ToDoContext } from "../ToDoContext";
 
 function ToDoForm() {
   const { createToDo, setOpenModal } = React.useContext(ToDoContext);
-  const [inputText, setInputText] = React.useState('');
+  const [inputText, setInputText] = React.useState("");
 
-  const onSubmit = (event) => {
+  function onSubmit(event) {
     event.preventDefault();
     createToDo(inputText);
     setOpenModal(false);
-    setInputText('');
+    setInputText("");
   }
 
-  const onCancel = (event) => {
+  const onCancel = () => {
     setOpenModal(false);
-    setInputText('');
-  }
+    setInputText("");
+  };
 
   const onChange = (event) => {
     setInputText(event.target.value);
-  }
+  };
 
   return (
-    <form
-      onSubmit={onSubmit}
-      className="form-create">
+    <form onSubmit={onSubmit} className="form-create">
       <label>Crea una tarea</label>
       <input
         className="form-input"
@@ -34,16 +32,19 @@ function ToDoForm() {
         onChange={onChange}
         required
         autoFocus
+        autoCapitalize="sentences"
       />
       <div className="form-button-div">
         <button
           className="form-button form-button-cancel"
+          type="button"
           onClick={onCancel}
-        >Cancelar</button>
-        <button
-          type="submit"
-          className="form-button form-button-create"
-        >Crear</button>
+        >
+          Cancelar
+        </button>
+        <button type="submit" className="form-button form-button-create">
+          Crear
+        </button>
       </div>
     </form>
   );
