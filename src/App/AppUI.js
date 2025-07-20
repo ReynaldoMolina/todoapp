@@ -10,6 +10,7 @@ import { ToDoEmpty } from "../ToDoEmpty";
 import { Modal } from "../Modal";
 import { ToDoForm } from "../ToDoForm";
 import { ToDoContext } from "../ToDoContext";
+import "./AppUI.css";
 
 function AppUI() {
   const {
@@ -23,40 +24,21 @@ function AppUI() {
   } = React.useContext(ToDoContext);
 
   return (
-    <>
+    <main className="main-container">
       <ToDoCounter />
       <ToDoSearch />
-      <ToDoList>
-        {loading && <ToDoLoading />}
-        {error && <ToDoError />}
-        {!loading &&
-          filteredToDos.filter((todo) => todo.completed === false).length ===
-            0 && <ToDoEmpty />}
 
-        {filteredToDos.map((toDo) => {
-          if (toDo.completed === false) {
-            return (
-              <ToDoItem
-                key={toDo.text}
-                text={toDo.text}
-                completed={toDo.completed}
-                setToDos={saveToDos}
-                onComplete={() => completeToDo(toDo.text)}
-                onDelete={() => deleteToDo(toDo.text)}
-              />
-            );
-          }
-        })}
-      </ToDoList>
-
-      {filteredToDos.filter((todo) => todo.completed === true).length > 0 && (
+      <section className="list-container">
         <ToDoList>
-          <p className="todolist-title">Completados</p>
+          <p className="todolist-title">Sin completar</p>
           {loading && <ToDoLoading />}
           {error && <ToDoError />}
+          {!loading &&
+            filteredToDos.filter((todo) => todo.completed === false).length ===
+              0 && <ToDoEmpty />}
 
           {filteredToDos.map((toDo) => {
-            if (toDo.completed === true) {
+            if (toDo.completed === false) {
               return (
                 <ToDoItem
                   key={toDo.text}
@@ -70,7 +52,30 @@ function AppUI() {
             }
           })}
         </ToDoList>
-      )}
+
+        {filteredToDos.filter((todo) => todo.completed === true).length > 0 && (
+          <ToDoList>
+            <p className="todolist-title">Completados</p>
+            {loading && <ToDoLoading />}
+            {error && <ToDoError />}
+
+            {filteredToDos.map((toDo) => {
+              if (toDo.completed === true) {
+                return (
+                  <ToDoItem
+                    key={toDo.text}
+                    text={toDo.text}
+                    completed={toDo.completed}
+                    setToDos={saveToDos}
+                    onComplete={() => completeToDo(toDo.text)}
+                    onDelete={() => deleteToDo(toDo.text)}
+                  />
+                );
+              }
+            })}
+          </ToDoList>
+        )}
+      </section>
 
       <CreateToDoButton />
 
@@ -79,7 +84,7 @@ function AppUI() {
           <ToDoForm />
         </Modal>
       )}
-    </>
+    </main>
   );
 }
 

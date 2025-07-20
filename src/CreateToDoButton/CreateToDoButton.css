@@ -6,7 +6,7 @@
   cursor: pointer;
   font-size: 25px;
   height: 60px;
-  position: absolute;
+  position: fixed;
   right: 20px;
   transform: rotate(0deg);
   transition-duration: 0.2s;
